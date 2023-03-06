@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="app_name">Tunation</string>
+     <string name="facebook_app_id">563636819024464</string>
+     <string name="fb_login_protocol_scheme">fbe6fff4fba83f374e5ba8f174e90bb5bc</string>
+     <string name="facebook_client_token">5637b781dae2069d6dc9c5883eab314a</string>
+</resources>
