@@ -1,10 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_final_project_level1/Login.dart';
-import 'package:flutter_final_project_level1/bottomnaviagtionbar.dart';
-import 'package:flutter_final_project_level1/spachscreen.dart';
-import 'package:flutter_final_project_level1/test.dart';
-import 'package:flutter_final_project_level1/test1.dart';
+import 'package:flutter_final_project_level1/Screens/Education1.dart';
+import 'package:flutter_final_project_level1/Screens/Login.dart';
+import 'package:flutter_final_project_level1/Screens/home.dart';
+import 'package:flutter_final_project_level1/Screens/profile.dart';
+import 'package:flutter_final_project_level1/Screens/region.dart';
+import 'package:flutter_final_project_level1/widgets/bottomnaviagtionbar.dart';
+import 'package:flutter_final_project_level1/testChatbot/spachscreen.dart';
+import 'package:flutter_final_project_level1/Screens/test.dart';
+import 'package:flutter_final_project_level1/Screens/test1.dart';
 import 'package:flutter_locales/flutter_locales.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -16,15 +20,16 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
-import 'Signup.dart';
-import 'Stat.dart';
-import 'Welcome.dart';
-import 'add_date.dart';
-import 'categ.dart';
-import 'Login.dart';
+import 'Screens/Associa.dart';
+import 'Screens/Signup.dart';
+import 'Screens/Stat.dart';
+import 'Screens/Welcome.dart';
+import 'data/model/add_date.dart';
+import 'Screens/categ.dart';
+import 'Screens/Login.dart';
 
 import 'Anim.dart';
-import 'money.dart';
+import 'Screens/money.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,6 +68,11 @@ class MyApp extends StatelessWidget {
                         "/money": (context) => const Money(),
                         "/stat": (context) => const Stat(),
                         "/btn": (context) => const Bottomn(),
+                        "/educ": (context) => const Education(),
+                        "/home": (context) => const Homesup(),
+                        "/profile": (context) => const Profile(),
+                        "/region": (context) => const Region(),
+                        "/associa": (context) => PageAssociation(),
                       }));
         });
   }
